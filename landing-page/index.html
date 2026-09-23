@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Founder-Led Demand Content | Sidd Chauhan</title>
+  <meta name="description" content="Turn founder expertise, customer conversations, and product insight into LinkedIn and newsletter content that educates buyers and supports sales conversations." />
+  <style>
+    :root{
+      --paper:#f5f2ea;
+      --ink:#11110f;
+      --muted:#68675f;
+      --sage:#cbd8c6;
+      --sage-dark:#274434;
+      --line:#c9c5ba;
+      --white:#fffdf8;
+      --max:1160px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      background:var(--paper);
+      color:var(--ink);
+      font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height:1.45;
+      -webkit-font-smoothing:antialiased;
+    }
+    a{color:inherit}
+    .wrap{width:min(var(--max), calc(100% - 40px)); margin:0 auto}
+    nav{
+      position:sticky; top:0; z-index:20;
+      background:rgba(245,242,234,.94);
+      backdrop-filter:blur(12px);
+      border-bottom:1px solid rgba(17,17,15,.14);
+    }
+    .nav-inner{height:68px; display:flex; align-items:center; justify-content:space-between; gap:20px}
+    .brand{font-weight:760; letter-spacing:-.03em; font-size:18px; text-decoration:none}
+    .nav-links{display:flex; gap:22px; align-items:center; font-size:14px}
+    .nav-links a{text-decoration:none; color:var(--muted)}
+    .nav-links a:hover{color:var(--ink)}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center; gap:10px;
+      min-height:48px; padding:0 18px; border:1px solid var(--ink); text-decoration:none;
+      font-weight:700; font-size:14px; transition:.18s ease; background:var(--ink); color:var(--paper);
+    }
+    .btn:hover{transform:translateY(-2px)}
+    .btn.light{background:transparent; color:var(--ink)}
+    .hero{padding:92px 0 72px; border-bottom:1px solid var(--line)}
+    .eyebrow{font-size:13px; font-weight:800; text-transform:uppercase; letter-spacing:.12em; color:var(--sage-dark)}
+    h1{
+      margin:18px 0 22px;
+      font-size:clamp(54px, 8vw, 106px);
+      line-height:.91;
+      letter-spacing:-.065em;
+      max-width:1000px;
+      font-weight:820;
+    }
+    .hero-grid{display:grid; grid-template-columns:1.1fr .9fr; gap:54px; align-items:end; margin-top:36px}
+    .hero-copy{font-size:clamp(18px, 2vw, 25px); max-width:760px; color:#25241f}
+    .actions{display:flex; gap:12px; flex-wrap:wrap; margin-top:30px}
+    .micro{font-size:13px; color:var(--muted); margin-top:14px}
+
+    .signal-card{border:1px solid var(--ink); background:var(--white); padding:24px}
+    .signal-title{font-weight:760; margin-bottom:20px}
+    .pipeline{display:grid; gap:10px}
+    .pipe-row{display:grid; grid-template-columns:1fr 28px 1fr; gap:8px; align-items:center}
+    .chip{padding:14px 14px; border:1px solid var(--line); background:var(--paper); font-size:13px; font-weight:700}
+    .arrow{text-align:center; font-size:18px}
+    .outcome{margin-top:14px; padding:16px; background:var(--sage); border:1px solid var(--ink); font-weight:800}
+
+    .strip{border-bottom:1px solid var(--line)}
+    .strip-inner{display:grid; grid-template-columns:repeat(4,1fr)}
+    .stat{padding:24px 18px; border-right:1px solid var(--line)}
+    .stat:last-child{border-right:0}
+    .stat b{display:block; font-size:18px; letter-spacing:-.02em}
+    .stat span{font-size:13px; color:var(--muted)}
+
+    section{padding:88px 0; border-bottom:1px solid var(--line)}
+    .section-head{display:grid; grid-template-columns:.72fr 1.28fr; gap:60px; align-items:start; margin-bottom:52px}
+    h2{font-size:clamp(38px,5vw,70px); line-height:.98; letter-spacing:-.05em; margin:0; max-width:800px}
+    .lede{font-size:19px; color:#35342e; max-width:700px; margin:0}
+    .label{font-size:12px; font-weight:800; text-transform:uppercase; letter-spacing:.12em; color:var(--sage-dark); padding-top:9px}
+
+    .problem-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:16px}
+    .problem{border:1px solid var(--ink); min-height:230px; padding:24px; background:var(--white); display:flex; flex-direction:column; justify-content:space-between}
+    .problem .num{font-size:13px; color:var(--muted)}
+    .problem h3{font-size:28px; letter-spacing:-.035em; margin:0 0 12px}
+    .problem p{margin:0; color:var(--muted)}
+
+    .system{display:grid; grid-template-columns:repeat(4,1fr); gap:0; border:1px solid var(--ink); background:var(--white)}
+    .step{padding:28px 22px; border-right:1px solid var(--ink); min-height:245px; position:relative}
+    .step:last-child{border-right:0}
+    .step .k{font-size:12px; color:var(--sage-dark); font-weight:800; letter-spacing:.1em; text-transform:uppercase}
+    .step h3{font-size:27px; letter-spacing:-.035em; margin:52px 0 12px}
+    .step p{margin:0; color:var(--muted)}
+    .step:after{content:'→'; position:absolute; right:-13px; top:50%; transform:translateY(-50%); background:var(--paper); padding:4px; font-size:20px; z-index:2}
+    .step:last-child:after{display:none}
+
+    .pilot{display:grid; grid-template-columns:1fr 1fr; border:1px solid var(--ink); background:var(--ink); color:var(--paper)}
+    .pilot-main{padding:42px}
+    .pilot-price{font-size:72px; letter-spacing:-.06em; font-weight:820; margin:18px 0 4px}
+    .pilot-note{color:#cfcbbf; font-size:13px}
+    .pilot-list{background:var(--paper); color:var(--ink); padding:42px; display:grid; gap:0}
+    .deliverable{padding:16px 0; border-bottom:1px solid var(--line); display:grid; grid-template-columns:34px 1fr; gap:10px}
+    .deliverable:last-child{border-bottom:0}
+    .tick{font-weight:900; color:var(--sage-dark)}
+
+    .fit-grid{display:grid; grid-template-columns:1fr 1fr; gap:16px}
+    .fit-card{padding:30px; border:1px solid var(--ink); background:var(--white)}
+    .fit-card h3{font-size:30px; letter-spacing:-.04em; margin:0 0 24px}
+    .fit-card ul{list-style:none; padding:0; margin:0; display:grid; gap:14px}
+    .fit-card li{padding-left:24px; position:relative; color:#33322d}
+    .fit-card.yes li:before{content:'+'; position:absolute; left:0; font-weight:900; color:var(--sage-dark)}
+    .fit-card.no li:before{content:'–'; position:absolute; left:0; font-weight:900}
+
+    .proof{display:grid; grid-template-columns:1fr 1fr; gap:22px}
+    .proof-card{border:1px solid var(--ink); padding:30px; background:var(--white)}
+    .proof-card h3{font-size:30px; margin:0 0 16px; letter-spacing:-.04em}
+    .proof-card p{color:var(--muted)}
+    .funnel{display:grid; grid-template-columns:repeat(4,1fr); margin-top:28px; border:1px solid var(--line)}
+    .funnel div{padding:20px 12px; text-align:center; border-right:1px solid var(--line)}
+    .funnel div:last-child{border-right:0}
+    .funnel b{display:block; font-size:28px; letter-spacing:-.04em}
+    .funnel span{font-size:12px; color:var(--muted)}
+    .proof-note{font-size:12px; color:var(--muted); margin-top:12px}
+
+    .content-map{display:grid; grid-template-columns:repeat(2,1fr); gap:16px}
+    .territory{border-top:2px solid var(--ink); padding:20px 0 8px}
+    .territory .small{font-size:12px; text-transform:uppercase; letter-spacing:.1em; color:var(--sage-dark); font-weight:800}
+    .territory h3{font-size:27px; letter-spacing:-.035em; margin:12px 0 8px}
+    .territory p{margin:0; color:var(--muted)}
+
+    .cta{padding:100px 0 112px; background:var(--sage); border-bottom:0}
+    .cta h2{max-width:950px}
+    .cta-grid{display:grid; grid-template-columns:1.2fr .8fr; gap:50px; align-items:end}
+    .cta p{font-size:20px; max-width:680px; color:#26372e}
+    footer{background:var(--ink); color:var(--paper); padding:34px 0}
+    .footer-inner{display:flex; justify-content:space-between; align-items:center; gap:20px; font-size:13px}
+    .footer-inner span{color:#cfcbbf}
+
+    @media(max-width:900px){
+      .nav-links a:not(.btn){display:none}
+      .hero{padding-top:64px}
+      .hero-grid,.section-head,.pilot,.proof,.cta-grid{grid-template-columns:1fr}
+      .strip-inner{grid-template-columns:1fr 1fr}
+      .stat:nth-child(2){border-right:0}
+      .stat:nth-child(-n+2){border-bottom:1px solid var(--line)}
+      .problem-grid{grid-template-columns:1fr}
+      .system{grid-template-columns:1fr}
+      .step{border-right:0; border-bottom:1px solid var(--ink); min-height:auto}
+      .step:last-child{border-bottom:0}
+      .step:after{content:'↓'; right:50%; top:auto; bottom:-17px; transform:translateX(50%)}
+      .step h3{margin-top:34px}
+      .fit-grid,.content-map{grid-template-columns:1fr}
+      .funnel{grid-template-columns:1fr 1fr}
+      .funnel div:nth-child(2){border-right:0}
+      .funnel div:nth-child(-n+2){border-bottom:1px solid var(--line)}
+      h1{font-size:clamp(50px,16vw,82px)}
+    }
+    @media(max-width:560px){
+      .wrap{width:min(var(--max), calc(100% - 24px))}
+      .nav-inner{height:60px}
+      section{padding:64px 0}
+      .hero{padding:54px 0 56px}
+      .strip-inner{grid-template-columns:1fr}
+      .stat{border-right:0; border-bottom:1px solid var(--line)}
+      .stat:last-child{border-bottom:0}
+      .pilot-main,.pilot-list{padding:28px}
+      .pilot-price{font-size:58px}
+      .funnel{grid-template-columns:1fr}
+      .funnel div{border-right:0; border-bottom:1px solid var(--line)}
+      .funnel div:last-child{border-bottom:0}
+      .footer-inner{align-items:flex-start; flex-direction:column}
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top">Sidd Chauhan</a>
+      <div class="nav-links">
+        <a href="#system">System</a>
+        <a href="#pilot">Pilot</a>
+        <a href="#proof">Process</a>
+        <a class="btn" href="mailto:siddchauhan.work@gmail.com?subject=Founder%20Demand%20Pilot">Start a pilot</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="top">
+    <header class="hero">
+      <div class="wrap">
+        <div class="eyebrow">Founder-led demand content for B2B SaaS</div>
+        <h1>Turn what you know into demand.</h1>
+        <div class="hero-grid">
+          <div>
+            <p class="hero-copy">I turn founder expertise, customer conversations, and product insight into LinkedIn and newsletter content that educates buyers and supports sales conversations.</p>
+            <div class="actions">
+              <a class="btn" href="mailto:siddchauhan.work@gmail.com?subject=Founder%20Demand%20Pilot&body=Hey%20Sidd%2C%20I%27m%20interested%20in%20the%2030-day%20Founder%20Demand%20Pilot.">Start the 30-day pilot</a>
+              <a class="btn light" href="#system">See the system</a>
+            </div>
+            <div class="micro">Built for founder-led B2B SaaS teams with a complex product, active GTM motion, and useful expertise trapped inside the company.</div>
+          </div>
+          <div class="signal-card">
+            <div class="signal-title">The content input already exists.</div>
+            <div class="pipeline">
+              <div class="pipe-row"><div class="chip">Sales calls</div><div class="arrow">→</div><div class="chip">Buyer insight</div></div>
+              <div class="pipe-row"><div class="chip">Customer calls</div><div class="arrow">→</div><div class="chip">Proof + stories</div></div>
+              <div class="pipe-row"><div class="chip">Founder POV</div><div class="arrow">→</div><div class="chip">Category education</div></div>
+              <div class="pipe-row"><div class="chip">Product decisions</div><div class="arrow">→</div><div class="chip">Market narrative</div></div>
+            </div>
+            <div class="outcome">Turn it into consistent public signal.</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="strip">
+      <div class="wrap strip-inner">
+        <div class="stat"><b>LinkedIn + newsletter</b><span>Primary content surfaces</span></div>
+        <div class="stat"><b>GTM-aligned</b><span>Built around what the business needs now</span></div>
+        <div class="stat"><b>AI-assisted</b><span>Research and workflow, not generic output</span></div>
+        <div class="stat"><b>30-day pilot</b><span>A small commitment with a clear scope</span></div>
+      </div>
+    </div>
+
+    <section id="problem">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="label">The problem</div>
+          <div>
+            <h2>Your best material rarely starts as a post.</h2>
+            <p class="lede">It starts as a sharp answer on a sales call, a customer story, a product decision, or a belief you repeat every week. Most of it disappears before the market sees it.</p>
+          </div>
+        </div>
+        <div class="problem-grid">
+          <article class="problem"><div class="num">01</div><div><h3>Expertise stays private.</h3><p>Good thinking lives in calls, docs, Slack, and the founder's head.</p></div></article>
+          <article class="problem"><div class="num">02</div><div><h3>Company content sounds like company content.</h3><p>Product pages explain features. Buyers still need a point of view and context.</p></div></article>
+          <article class="problem"><div class="num">03</div><div><h3>Publishing becomes another founder task.</h3><p>Content gets pushed behind hiring, product, sales, fundraising, and customers.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="system">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="label">The system</div>
+          <div>
+            <h2>Extract. Sharpen. Publish. Learn.</h2>
+            <p class="lede">The job is not to invent a fake founder voice. The job is to capture what is already true, make the thinking clearer, and connect it to current GTM priorities.</p>
+          </div>
+        </div>
+        <div class="system">
+          <div class="step"><div class="k">Step 01</div><h3>Extract</h3><p>Founder interviews, sales calls, customer language, product decisions, current GTM priorities.</p></div>
+          <div class="step"><div class="k">Step 02</div><h3>Sharpen</h3><p>Find the belief, tension, lesson, story, or useful distinction worth publishing.</p></div>
+          <div class="step"><div class="k">Step 03</div><h3>Publish</h3><p>LinkedIn posts and newsletter content built around buyer education, not filler.</p></div>
+          <div class="step"><div class="k">Step 04</div><h3>Learn</h3><p>Track what earns replies, saves, conversations, objections, and commercial signal.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pilot">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="label">30-day pilot</div>
+          <div>
+            <h2>A focused month. Enough output to test the system.</h2>
+            <p class="lede">Start small. Build the message system, publish consistently, then decide what deserves a longer engagement.</p>
+          </div>
+        </div>
+        <div class="pilot">
+          <div class="pilot-main">
+            <div class="eyebrow" style="color:#cbd8c6">Founder Demand Pilot</div>
+            <div class="pilot-price">$2,000</div>
+            <div class="pilot-note">Test price for the 30-day engagement.</div>
+            <div class="actions" style="margin-top:34px">
+              <a class="btn" style="background:var(--paper);color:var(--ink);border-color:var(--paper)" href="mailto:siddchauhan.work@gmail.com?subject=30-Day%20Founder%20Demand%20Pilot">Ask about the pilot</a>
+            </div>
+          </div>
+          <div class="pilot-list">
+            <div class="deliverable"><div class="tick">✓</div><div>Founder positioning interview</div></div>
+            <div class="deliverable"><div class="tick">✓</div><div>Message and content map</div></div>
+            <div class="deliverable"><div class="tick">✓</div><div>8 LinkedIn posts</div></div>
+            <div class="deliverable"><div class="tick">✓</div><div>1 newsletter or long-form email</div></div>
+            <div class="deliverable"><div class="tick">✓</div><div>Customer and sales insight mining</div></div>
+            <div class="deliverable"><div class="tick">✓</div><div>End-of-month performance and learning review</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="fit">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="label">Fit</div>
+          <div><h2>Useful when content supports a real business motion.</h2></div>
+        </div>
+        <div class="fit-grid">
+          <div class="fit-card yes">
+            <h3>Good fit</h3>
+            <ul>
+              <li>B2B SaaS with a complex product</li>
+              <li>Founder still shapes sales, positioning, or category education</li>
+              <li>Launching, hiring, raising, repositioning, or entering a market</li>
+              <li>Strong customer knowledge but inconsistent founder publishing</li>
+              <li>You want content connected to buyer questions and GTM priorities</li>
+            </ul>
+          </div>
+          <div class="fit-card no">
+            <h3>Not the fit</h3>
+            <ul>
+              <li>You only want daily volume</li>
+              <li>You want a fake personality or manufactured hot takes</li>
+              <li>You already run a mature founder-led content machine</li>
+              <li>You want content disconnected from customers, product, or sales</li>
+              <li>You measure success only by impressions</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proof">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="label">How I work</div>
+          <div>
+            <h2>Research before outreach. Context before content.</h2>
+            <p class="lede">This offer is being built the same way I would approach your market: define the ICP, find the right accounts, research what changed, then form a specific message hypothesis.</p>
+          </div>
+        </div>
+        <div class="proof">
+          <div class="proof-card">
+            <h3>Current GTM sprint</h3>
+            <p>I used Clay and multi-source research to build and narrow a real B2B prospecting list rather than start with a generic audience.</p>
+            <div class="funnel">
+              <div><b>25</b><span>accounts sourced</span></div>
+              <div><b>8</b><span>researched deeper</span></div>
+              <div><b>5</b><span>prioritized</span></div>
+              <div><b>1</b><span>full account brief</span></div>
+            </div>
+            <div class="proof-note">Process evidence, not a claim of client revenue or campaign results.</div>
+          </div>
+          <div class="proof-card">
+            <h3>The standard</h3>
+            <p>A strong company is not automatically a strong prospect. The research process explicitly removes accounts where the proposed solution is already mature or the trigger is weak.</p>
+            <div style="margin-top:26px;border:1px solid var(--line);padding:18px;background:var(--paper)">
+              <b>Research → judgment → message → distribution → response</b>
+              <p style="margin-bottom:0;font-size:14px">The goal is evidence from real humans, not a prettier research spreadsheet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="territories">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="label">What we write about</div>
+          <div><h2>Content territories tied to the business.</h2></div>
+        </div>
+        <div class="content-map">
+          <div class="territory"><div class="small">01</div><h3>Problem education</h3><p>Why the buyer's current approach breaks, what they misunderstand, and what better looks like.</p></div>
+          <div class="territory"><div class="small">02</div><h3>Customer learning</h3><p>Patterns, objections, stories, and lessons pulled from real customer conversations.</p></div>
+          <div class="territory"><div class="small">03</div><h3>Founder POV</h3><p>Beliefs earned through operating experience, product decisions, failures, and market exposure.</p></div>
+          <div class="territory"><div class="small">04</div><h3>GTM in motion</h3><p>Market expansion, launches, hiring, new positioning, and what the team is learning as it executes.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="wrap cta-grid">
+        <div>
+          <div class="eyebrow">30-day pilot</div>
+          <h2>Use what your company already knows.</h2>
+          <p>We start with one conversation, your current GTM priorities, and the material already inside the business. Then we turn it into a month of useful founder-led content.</p>
+        </div>
+        <div class="actions" style="justify-content:flex-start">
+          <a class="btn" href="mailto:siddchauhan.work@gmail.com?subject=Founder%20Demand%20Pilot&body=Hey%20Sidd%2C%20I%27d%20like%20to%20talk%20about%20the%2030-day%20Founder%20Demand%20Pilot.">Email Sidd</a>
+          <a class="btn light" href="#pilot">View pilot scope</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <strong>Sidd Chauhan</strong>
+      <span>Founder-led demand content for B2B SaaS.</span>
+      <a href="mailto:siddchauhan.work@gmail.com">siddchauhan.work@gmail.com</a>
+    </div>
+  </footer>
+</body>
+</html>
