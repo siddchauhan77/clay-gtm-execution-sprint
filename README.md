@@ -1,6 +1,10 @@
 # Clay GTM Execution Sprint
 
-A portfolio case study built from three Handshake AI Skills Studio / Clay projects and extended into a real GTM campaign.
+A portfolio case study built from three Handshake AI Skills Studio / Clay projects and extended into an execution-ready GTM campaign.
+
+**Status:** Research and campaign assets are complete. Outreach and results remain pending.
+
+**Review first:** [Combined case study](case-study/combined-case-study.md) · [Campaign landing page](landing-page/index.html) · [Target-account data](data/target-accounts.csv)
 
 ## Goal
 
@@ -109,4 +113,4 @@ Aligned and CloudEagle.ai were explicitly deprioritized because their founder-le
 
 The evidence is not "I learned Clay."
 
-The evidence is: **I used account data, enrichment, human research, and GTM judgment to move from market definition to prioritized accounts, a specific account hypothesis, a campaign plan, and real distribution.**
+The evidence is: **I used account data, enrichment, human research, and GTM judgment to move from market definition to prioritized accounts, a specific account hypothesis, and a campaign package ready for real distribution.**
