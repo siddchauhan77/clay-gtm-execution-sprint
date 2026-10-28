@@ -1,0 +1,42 @@
+{
+  "run_id": "first-run",
+  "mode": "simulation_only",
+  "started_at": "2026-10-28T21:18:00.134Z",
+  "finished_at": "2026-10-28T21:18:00.196Z",
+  "processing_time_ms": 42.441,
+  "local_processing_cost_usd": 0,
+  "clay_or_provider_cost_usd": "unknown_not_measured",
+  "input_rows": 26,
+  "normalized_unique_records": 25,
+  "duplicates_removed": 1,
+  "routed_records": 5,
+  "held_records": 19,
+  "failed_records": 1,
+  "crm_inserted": 5,
+  "crm_updated": 0,
+  "crm_unchanged": 0,
+  "duplicates": [
+    {
+      "account": "Wooqer duplicate fixture",
+      "domain": "wooqer.com",
+      "reason": "duplicate_normalized_domain"
+    }
+  ],
+  "failed": [
+    {
+      "account": "Revnue",
+      "domain": "strev.ai",
+      "reason": "enrichment_conflict"
+    }
+  ],
+  "inserted": [
+    "wooqer.com",
+    "avoautomation.com",
+    "piecyfer.com",
+    "refold.ai",
+    "bellwood.io"
+  ],
+  "updated": [],
+  "unchanged": [],
+  "boundary": "No external CRM, enrichment provider, sequencer, or contact was changed."
+}

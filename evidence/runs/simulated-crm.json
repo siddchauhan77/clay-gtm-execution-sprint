@@ -1,0 +1,55 @@
+{
+  "schema": "simulated-test-crm-v1",
+  "records": {
+    "wooqer.com": {
+      "account": "Wooqer",
+      "domain": "wooqer.com",
+      "route": "founder_demand_pilot",
+      "review_status": "approved",
+      "career_networking_value": "high",
+      "evidence_status": "partial",
+      "source_ids": "SRC-CLAY-001;SRC-WOQ-001;SRC-WOQ-002;SRC-WOQ-003",
+      "score_status": "not_reconstructed"
+    },
+    "avoautomation.com": {
+      "account": "Avo Automation",
+      "domain": "avoautomation.com",
+      "route": "founder_demand_pilot",
+      "review_status": "approved",
+      "career_networking_value": "medium",
+      "evidence_status": "partial",
+      "source_ids": "SRC-CLAY-001",
+      "score_status": "not_reconstructed"
+    },
+    "piecyfer.com": {
+      "account": "PieCyfer",
+      "domain": "piecyfer.com",
+      "route": "founder_demand_pilot",
+      "review_status": "approved",
+      "career_networking_value": "medium",
+      "evidence_status": "partial",
+      "source_ids": "SRC-CLAY-001",
+      "score_status": "not_reconstructed"
+    },
+    "refold.ai": {
+      "account": "Refold AI",
+      "domain": "refold.ai",
+      "route": "career_networking",
+      "review_status": "network_only",
+      "career_networking_value": "high",
+      "evidence_status": "partial",
+      "source_ids": "SRC-CLAY-001",
+      "score_status": "not_reconstructed"
+    },
+    "bellwood.io": {
+      "account": "Bellwood",
+      "domain": "bellwood.io",
+      "route": "founder_demand_pilot",
+      "review_status": "approved",
+      "career_networking_value": "medium",
+      "evidence_status": "partial",
+      "source_ids": "SRC-CLAY-001",
+      "score_status": "not_reconstructed"
+    }
+  }
+}

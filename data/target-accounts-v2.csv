@@ -1,0 +1,26 @@
+account,domain,employee_estimate,3mo_headcount_growth_pct,12mo_headcount_growth_pct,open_jobs,enrichment_status,historic_priority_status,commercial_score_status,commercial_route,career_networking_value,review_status,source_ids,source_snapshot_date,notes
+Wooqer,wooqer.com,92,5.88,2.27,0,partial,Final 5 / Primary,not_reconstructed,founder_demand_pilot,high,approved,"SRC-CLAY-001;SRC-WOQ-001;SRC-WOQ-002;SRC-WOQ-003",unknown,North America expansion and founder-led opportunity
+Avo Automation,avoautomation.com,143,3.64,-0.70,0,partial,Final 5,not_reconstructed,founder_demand_pilot,medium,approved,SRC-CLAY-001,unknown,Complex enterprise category and executive education opportunity
+Revnue,strev.ai,128,-50.00,50.00,0,conflict,Deprioritized,not_reconstructed,none,unknown,hold,SRC-CLAY-001,unknown,Conflicting enrichment retained as a failure case
+PieCyfer,piecyfer.com,50,4.16,13.63,0,partial,Final 5,not_reconstructed,founder_demand_pilot,medium,approved,SRC-CLAY-001,unknown,CEO audience and US business relevance
+Hatica,hatica.io,13,-6.25,-25.00,0,partial,Deprioritized,not_reconstructed,none,unknown,hold,SRC-CLAY-001,unknown,Negative headcount trend
+TestGrid.io,testgrid.io,597,20.67,143.40,0,partial,Deprioritized,not_reconstructed,none,unknown,hold,SRC-CLAY-001,unknown,Outside target size despite growth
+PostHog,posthog.com,225,6.50,90.17,1,partial,Benchmark,not_reconstructed,none,medium,do_not_pitch,SRC-CLAY-001,unknown,Strong existing content and distribution
+Laravel,laravel.com,359,4.11,17.21,6,partial,Deprioritized,not_reconstructed,none,unknown,hold,SRC-CLAY-001,unknown,Outside target size
+TribalScale,tribalscale.com,44,13.51,13.51,5,partial,Secondary,not_reconstructed,none,unknown,hold,SRC-CLAY-001,unknown,Services firm outside core SaaS ICP
+Expedite Commerce,expeditecommerce.com,39,-19.61,-32.79,0,partial,Deprioritized,not_reconstructed,none,unknown,hold,SRC-CLAY-001,unknown,Negative growth signal
+Aligned,alignedup.com,85,7.04,40.74,0,partial,Benchmark / Do not pitch,not_reconstructed,none,medium,do_not_pitch,SRC-CLAY-001,unknown,Mature founder-led content system
+CloudEagle.ai,cloudeagle.ai,89,13.33,-4.50,3,partial,Benchmark / Do not pitch,not_reconstructed,none,medium,do_not_pitch,SRC-CLAY-001,unknown,Strong existing founder content
+GroRapid Labs,grorapidlabs.com,13,-7.70,-25.00,0,partial,Deprioritized,not_reconstructed,none,unknown,hold,SRC-CLAY-001,unknown,Outside preferred fit and negative growth
+IgniteTech,ignitetech.com,397,3.67,29.93,10,partial,Deprioritized,not_reconstructed,none,unknown,hold,SRC-CLAY-001,unknown,Outside target size
+Tech9,tech9.com,212,-4.02,-1.38,5,partial,Secondary,not_reconstructed,none,unknown,hold,SRC-CLAY-001,unknown,Services firm and negative growth
+Ignition,ignitionapp.com,345,4.89,18.27,7,partial,Deprioritized,not_reconstructed,none,unknown,hold,SRC-CLAY-001,unknown,Outside target size
+Mavericks United,maverickslabs.io,183,0.58,25.36,0,partial,Secondary,not_reconstructed,none,unknown,hold,SRC-CLAY-001,unknown,Near size boundary and services positioning
+HQ,hiehq.com,654,3.31,11.01,0,partial,Deprioritized,not_reconstructed,none,unknown,hold,SRC-CLAY-001,unknown,Outside target size
+Refold AI,refold.ai,56,7.01,69.44,5,partial,Final 5 / Network,not_reconstructed,career_networking,high,network_only,SRC-CLAY-001,unknown,Strong career value and mature content. Not a service pitch
+Procol,procol.ai,240,6.01,29.37,1,partial,Secondary,not_reconstructed,none,unknown,hold,SRC-CLAY-001,unknown,Outside preferred size but good growth
+Stebr,stebr.com,16,0.00,-5.89,0,partial,Deprioritized,not_reconstructed,none,unknown,hold,SRC-CLAY-001,unknown,Weak growth signal
+OTS Solutions,otssolutions.com,233,2.65,5.93,2,partial,Secondary / Job angle,not_reconstructed,none,high,hold,SRC-CLAY-001,unknown,Relevant marketing opening and skill overlap
+Adept,adept.ai,93,20.00,50.00,0,partial,Drop,not_reconstructed,none,medium,hold,SRC-CLAY-001,unknown,Leadership ambiguity reduced priority
+PureCode AI,purecode.ai,30,-14.29,-38.78,0,partial,Deprioritized,not_reconstructed,none,unknown,hold,SRC-CLAY-001,unknown,Negative growth signal
+Bellwood,bellwood.io,47,11.62,41.17,0,partial,Final 5,not_reconstructed,founder_demand_pilot,medium,approved,SRC-CLAY-001,unknown,Services ICP exception with founder audience and growth trigger

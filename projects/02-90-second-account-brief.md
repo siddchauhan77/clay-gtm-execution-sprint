@@ -103,7 +103,7 @@ Potential content territories:
 
 Wooqer has global product credibility. The GTM challenge is translating that credibility into local relevance and trust in a new market.
 
-Founder-led content could support:
+The founder-led content hypothesis supports:
 
 - U.S.-specific relevance
 - Buyer education
@@ -142,11 +142,31 @@ The timing is interesting because Wooqer has moved into an active North America 
 
 Wooqer already has strong global proof. The GTM challenge appears to be translating that credibility into U.S. awareness, trust, and pipeline.
 
-My hypothesis is that founder-led content could support this expansion by turning Wooqer's accumulated operational knowledge, customer stories, and U.S. market learning into useful category education for retail operations leaders.
+My hypothesis: founder-led content supports this expansion by turning Wooqer's accumulated operational knowledge, customer stories, and U.S. market learning into useful category education for retail operations leaders.
 
 Instead of generic product promotion, I would test content around the execution gap inside multi-location businesses, lessons from global retail operators, common operational failures, and what Wooqer is learning while building its North American business.
 
 The goal would be to connect the founder voice with the new U.S. sales motion and create more informed conversations with the operators Wooqer wants to reach.
+
+## Fact, claim, and hypothesis boundary
+
+### Current official evidence
+
+- [Wooqer US retail page](https://wooqer.com/us/solutions/retail/) supports the current US-chain positioning and product areas such as audits, checklists, frontline communication, and analytics.
+- [Wooqer US page](https://wooqer.com/us/) supports current retail and restaurant positioning in the United States.
+- [Wooqer LinkedIn company page](https://www.linkedin.com/company/wooqer) supports the current company description, San Jose headquarters, employee listing, and founder association.
+
+### Attributed vendor claims
+
+Product adoption, time-savings, compliance, and customer outcome figures on Wooqer's pages are vendor claims. This project does not present them as independent results.
+
+### Hypothesis
+
+The recommendation to use founder knowledge and US market learning as category education is an account hypothesis. No outreach response, pipeline effect, or revenue impact has established it.
+
+### Historical gap
+
+The original research did not retain every source URL or source date. The [source register](../data/source-register.csv) records this gap instead of assigning a false date.
 
 ## Portfolio evidence created
 

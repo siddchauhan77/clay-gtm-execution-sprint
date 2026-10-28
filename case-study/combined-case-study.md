@@ -17,7 +17,13 @@ ICP
       ↓
 Research + enrichment
       ↓
+Normalize + deduplicate
+      ↓
 Account prioritization
+      ↓
+Human review
+      ↓
+Simulated CRM upsert + routing
       ↓
 Detailed account brief
       ↓
@@ -40,6 +46,10 @@ Clay was used to source and enrich 25 accounts. The list was narrowed to eight f
 
 The important insight was that data enrichment alone was insufficient. Human research changed the ranking because companies such as Aligned and CloudEagle.ai looked attractive based on company quality but had already solved much of the founder-content problem.
 
+The published project did not retain the original numeric scores, weights, source URLs, or enrichment dates. Scoring Methodology v2.0 is a new rubric. Historic values were not reconstructed.
+
+The list now has a local safe-handoff test. It normalizes domains, removes a duplicate fixture, fails a conflicting enrichment record closed, gates records through human review, routes commercial and networking records separately, and writes only to a simulated CRM. A rerun produced zero duplicate inserts. A recovery run preserved disputed values as `unknown`.
+
 ## Project 2: Account intelligence
 
 Wooqer became the primary account because of active North America expansion, strong global proof, founder involvement, and a product that requires significant buyer education.
@@ -58,7 +68,7 @@ A one-page campaign site was built to validate the offer after outbound outreach
 
 ## Current status
 
-Strategy and campaign infrastructure are complete.
+Research, campaign assets, and the local handoff simulation are complete. A real CRM integration, real outreach, and market outcomes remain pending.
 
 The next stage is distribution:
 

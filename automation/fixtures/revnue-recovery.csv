@@ -1,0 +1,2 @@
+account,domain,employee_estimate,3mo_headcount_growth_pct,12mo_headcount_growth_pct,open_jobs,enrichment_status,historic_priority_status,commercial_score_status,commercial_route,career_networking_value,review_status,source_ids,source_snapshot_date,notes
+Revnue,strev.ai,unknown,unknown,unknown,0,resolved_as_unknown,Deprioritized,not_reconstructed,none,unknown,hold,SRC-CLAY-001,unknown,Conflict resolved by preserving the disputed values as unknown

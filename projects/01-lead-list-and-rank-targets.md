@@ -62,7 +62,7 @@ Human judgment
 
 ## Enrichment signals
 
-The lead list was enriched with signals that could materially change priority:
+The lead list was enriched with signals tied to priority:
 
 - Headcount growth
 - Open jobs
@@ -83,6 +83,22 @@ Accounts were evaluated using:
 - Ability to pay
 - Reachability
 - Career / portfolio value
+
+### Published scoring boundary
+
+The original published files name the dimensions but do not retain the numeric row scores, weights, source URLs, or enrichment dates.
+
+[Scoring Methodology v2.0](../data/scoring-methodology.md) adds a new commercial model:
+
+- ICP fit: 30%
+- Trigger strength: 25%
+- Founder-content opportunity: 20%
+- Ability to pay: 15%
+- Reachability: 10%
+
+Career and networking value stays separate. It cannot raise the commercial-fit score.
+
+Historic scores were not backfilled. Missing values remain `unknown`.
 
 A core lesson emerged:
 
@@ -136,6 +152,44 @@ This project demonstrates:
 - Account selection
 - Disqualification logic
 - GTM judgment
+
+## Safe handoff extension
+
+The research list now passes through a local, simulation-only workflow:
+
+```text
+normalize
+  ↓
+deduplicate by domain
+  ↓
+validate enrichment state
+  ↓
+human review gate
+  ↓
+route by commercial or networking purpose
+  ↓
+simulated CRM upsert
+  ↓
+run log
+```
+
+Verified test results:
+
+- First run: 26 input rows, 25 unique domains, one duplicate removed, five simulated CRM inserts, one enrichment conflict failed closed
+- Safe rerun: zero new inserts, five unchanged records
+- Recovery run: disputed values changed to `unknown`, zero failed records, five unchanged CRM records
+- Local processing time: 42.441 ms first run, 3.856 ms rerun, 2.838 ms recovery run
+- Local processing cost: $0
+- Clay or provider cost: unknown and not measured
+
+This proves local control behavior. It does not prove a production CRM integration.
+
+Evidence:
+
+- [Target-account data v2](../data/target-accounts-v2.csv)
+- [Source register](../data/source-register.csv)
+- [Automation notes](../automation/README.md)
+- [Run summary](../evidence/runs/run-summary.md)
 
 ## Done criteria
 

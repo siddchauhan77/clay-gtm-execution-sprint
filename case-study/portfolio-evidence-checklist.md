@@ -13,6 +13,12 @@
 - [x] GTM plan
 - [x] Campaign landing page
 - [x] Intermediate visual artifacts
+- [x] Scoring Methodology v2.0
+- [x] Provenance and unknown-value fields
+- [x] Duplicate-domain fixture and test
+- [x] Simulated CRM upsert
+- [x] Safe rerun log
+- [x] Failed-record recovery log
 
 ## Capture during execution
 
@@ -45,3 +51,5 @@
 Documentation must remain lighter than execution.
 
 Capture only artifacts that prove judgment, action, or market response.
+
+Simulation must stay labeled as simulation. A local run is not a production deployment, CRM adoption, outreach, pipeline, or revenue.

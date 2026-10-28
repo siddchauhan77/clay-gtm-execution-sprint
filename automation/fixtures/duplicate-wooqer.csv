@@ -1,0 +1,2 @@
+account,domain,employee_estimate,3mo_headcount_growth_pct,12mo_headcount_growth_pct,open_jobs,enrichment_status,historic_priority_status,commercial_score_status,commercial_route,career_networking_value,review_status,source_ids,source_snapshot_date,notes
+Wooqer duplicate fixture,https://www.wooqer.com/,92,5.88,2.27,0,partial,Fixture,not_reconstructed,founder_demand_pilot,high,approved,SRC-CLAY-001,unknown,Simulation-only duplicate used to test normalized-domain deduplication

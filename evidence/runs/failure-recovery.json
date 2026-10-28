@@ -1,0 +1,36 @@
+{
+  "run_id": "failure-recovery",
+  "mode": "simulation_only",
+  "started_at": "2026-10-28T21:18:02.102Z",
+  "finished_at": "2026-10-28T21:18:02.106Z",
+  "processing_time_ms": 2.838,
+  "local_processing_cost_usd": 0,
+  "clay_or_provider_cost_usd": "unknown_not_measured",
+  "input_rows": 26,
+  "normalized_unique_records": 25,
+  "duplicates_removed": 1,
+  "routed_records": 5,
+  "held_records": 20,
+  "failed_records": 0,
+  "crm_inserted": 0,
+  "crm_updated": 0,
+  "crm_unchanged": 5,
+  "duplicates": [
+    {
+      "account": "Wooqer duplicate fixture",
+      "domain": "wooqer.com",
+      "reason": "duplicate_normalized_domain"
+    }
+  ],
+  "failed": [],
+  "inserted": [],
+  "updated": [],
+  "unchanged": [
+    "wooqer.com",
+    "avoautomation.com",
+    "piecyfer.com",
+    "refold.ai",
+    "bellwood.io"
+  ],
+  "boundary": "No external CRM, enrichment provider, sequencer, or contact was changed."
+}

@@ -4,15 +4,22 @@ A portfolio case study built from three Handshake AI Skills Studio / Clay projec
 
 **Status:** Research and campaign assets are complete. Outreach and results remain pending.
 
-**Review first:** [Combined case study](case-study/combined-case-study.md) · [Campaign landing page](landing-page/index.html) · [Target-account data](data/target-accounts.csv)
+**Review first:** [Combined case study](case-study/combined-case-study.md) · [Campaign landing page](landing-page/index.html) · [Target-account data v2](data/target-accounts-v2.csv) · [Scoring method](data/scoring-methodology.md) · [Safe-handoff test](evidence/runs/run-summary.md)
 
 ## Goal
 
 Turn Clay research into public evidence of GTM ability and real market action:
 
-`Offer → ICP → accounts → enrichment → prioritization → account brief → GTM plan → landing page → outreach → results`
+`Offer → ICP → accounts → enrichment → normalize → deduplicate → prioritization → human review → test-CRM routing → account brief → GTM plan → landing page → outreach → results`
 
 This repo documents the work completed so far. The remaining work is real outreach, results tracking, and the final retrospective.
+
+## Evidence boundary
+
+- The original numeric row scores, weights, source URLs, and enrichment dates were not retained in the published project.
+- [Scoring Methodology v2.0](data/scoring-methodology.md) is a new, versioned rubric. It is not presented as recovered history.
+- Missing source dates and disputed values remain `unknown`. They are not converted to zero.
+- The CRM handoff is a local simulation. It does not write to a real CRM or send a campaign.
 
 ## Projects
 
@@ -101,6 +108,9 @@ Aligned and CloudEagle.ai were explicitly deprioritized because their founder-le
 - Wooqer 90-second account brief
 - Side-hustle GTM plan
 - Campaign landing page
+- Versioned scoring and provenance schema
+- Local normalize, deduplicate, review, routing, and simulated CRM-upsert test
+- Safe rerun and failed-record recovery test
 
 ## What is next
 
@@ -108,6 +118,7 @@ Aligned and CloudEagle.ai were explicitly deprioritized because their founder-le
 - Outreach to Avo Automation, Bellwood, PieCyfer, and Refold AI
 - Track replies, objections, meetings, opportunities, and revenue
 - Publish final results-based case study
+- Connect the tested schema to an approved test CRM before any production write
 
 ## Portfolio thesis
 

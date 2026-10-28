@@ -1,0 +1,6 @@
+source_id,source_name,source_url,verified_on,supports,limitation
+SRC-CLAY-001,Original Clay enrichment snapshot,unknown,unknown,"employee estimate; 3-month growth; 12-month growth; open jobs","The published export did not retain the Clay table URL, provider names, or snapshot date."
+SRC-WOQ-001,Wooqer official US retail page,https://wooqer.com/us/solutions/retail/,2026-10-28,"US retail positioning; audits; checklists; frontline communication; analytics","Current vendor page. Vendor product and outcome claims are not independent validation."
+SRC-WOQ-002,Wooqer official US page,https://wooqer.com/us/,2026-10-28,"US retail and restaurant positioning; operations stack","Current vendor page. It does not prove the timing or results of the original 2026-09 research."
+SRC-WOQ-003,Wooqer LinkedIn company page,https://www.linkedin.com/company/wooqer,2026-10-28,"company description; headquarters; employee listing; founder association","Current LinkedIn snapshot. Counts and company copy change over time."
+SRC-PORT-001,Original published project files,https://github.com/siddchauhan77/clay-gtm-execution-sprint,2026-10-28,"historic selection decisions; project narrative; status boundary","The repo records decisions but not all underlying source URLs or numeric row scores."
