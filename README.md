@@ -76,25 +76,30 @@ REAL OUTREACH NEXT
 
 Aligned and CloudEagle.ai were explicitly deprioritized because their founder-led content motion was already mature. Adept was deprioritized because of leadership ambiguity.
 
+## Reviewer shortcuts
+
+- [Live visual portfolio](https://clay-gtm-portfolio.vercel.app): three connected project views and direct evidence links.
+- [Hiring proof in one page](case-study/hiring-proof-one-pager.md): capability → source artifact → limitation.
+- [Technical workflow source](automation/gtm-pipeline.mjs): local normalize, duplicate handling, approval gate, routing and simulated CRM upsert.
+- [Three-run evidence](evidence/runs/run-summary.md): first run, safe rerun and recovery.
+- [20 content ideas + two carousel scripts](content/gtme-source-to-content-bank.md): research translated into public teaching assets.
+
 ## Repo structure
 
 ```text
 .
-├── README.md
-├── projects/
-│   ├── 01-lead-list-and-rank-targets.md
-│   ├── 02-90-second-account-brief.md
-│   └── 03-side-hustle-gtm-plan.md
-├── data/
-│   └── target-accounts.csv
-├── case-study/
-│   ├── combined-case-study.md
-│   └── portfolio-evidence-checklist.md
-├── landing-page/
-│   └── index.html
-└── assets/
-    └── visual artifacts
+├── README.md / STATUS.md
+├── projects/              # three Handshake x Clay project write-ups
+├── data/                  # historic list, v2 schema, source register and scoring rules
+├── automation/            # local test-CRM simulator and explicit failure fixtures
+├── evidence/runs/         # first run, rerun, recovery and simulated CRM logs
+├── case-study/            # combined narrative, proof checklist, hiring one-pager
+├── content/               # five-source editorial bank and two carousels
+├── landing-page/          # campaign source (intake not integrated)
+└── assets/                # supporting visuals
 ```
+
+**Review status:** The public portfolio already links to the underlying CSV, scoring method, source register, Wooqer brief, full campaign plan and simulation logs. Do not describe that as an uncorrected missing-link problem.
 
 ## What is complete
 
